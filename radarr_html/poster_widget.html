@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Poster</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Prevent scrollbars */
+            background-color: #000;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 100%; /* Stretch to fill the width */
+            height: 100%; /* Stretch to fill the height */
+            object-fit: cover; /* Ensures the image fills the container without black bars */
+        }
+    </style>
+</head>
+<body>
+    <img src="{{ poster_url }}" alt="Movie Poster">
+</body>
+</html>
