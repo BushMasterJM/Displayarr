@@ -40,8 +40,8 @@ services:
 ```
 RADARR_API_KEY=your-radarr-api-key
 SONARR_API_KEY=your-sonarr-api-key
-RADARR_URL=http://192.168.1.78:7878
-SONARR_URL=http://192.168.1.78:8989
+RADARR_URL=http://192.168.1.0:7878
+SONARR_URL=http://192.168.1.0:8989
 ```
 ## Running the App with Docker
 Build and start the app with Docker Compose:
