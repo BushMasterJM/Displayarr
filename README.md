@@ -48,11 +48,11 @@ Build and start the app with Docker Compose:
 `docker-compose up --build`
 
 The Flask app will be accessible on the following ports:
-
+```
 5020: Radarr movie count API
 5021: Sonarr episode count API
 5022: Radarr poster display
-
+```
 ## Configuration
 
 Since this is just a python script and some HTML, you can edit the HTML to your liking so that it works for whatever setup you have
