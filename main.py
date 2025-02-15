@@ -15,9 +15,9 @@ load_dotenv()
 # ============================
 
 # Flask app setup
-app1 = Flask(__name__, template_folder="radarr_html")  # Radarr app
-app2 = Flask(__name__, template_folder="sonarr_html")  # Sonarr app
-app3 = Flask(__name__, template_folder="radarr_html")  # Radarr Poster
+app1 = Flask(__name__, template_folder="html") # Radarr Count
+app2 = Flask(__name__, template_folder="html") # Sonarr Count
+app3 = Flask(__name__, template_folder="html") # Radarr Poster
 
 # Radarr Poster Location
 poster_file_path = "assets/poster.jpg"
