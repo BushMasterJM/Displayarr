@@ -16,8 +16,10 @@ A set of Flask-based applications for displaying Radarr and Sonarr data, includi
 1. Clone the repository to your local machine:
 
 2. In the project root, create a docker-compose.yml file with the following content:
-version: '3.8'
+
 ```
+version: '3.8'
+
 services:
   flask-app:
     image: python:3.10-slim
