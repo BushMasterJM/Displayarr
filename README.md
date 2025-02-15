@@ -49,11 +49,13 @@ Build and start the app with Docker Compose:
 
 The Flask app will be accessible on the following ports:
 ```
-5020: Radarr movie count API
-5021: Sonarr episode count API
+5020: Radarr movie count
+5021: Sonarr episode count
 5022: Radarr poster display
 ```
 ## Configuration
 
 Since this is just a python script and some HTML, you can edit the HTML to your liking so that it works for whatever setup you have
 
+## Disclaimer: 
+This script was mainly written by ChatGPT and then edited by me because I couldn't be bothered to write it myself. Also don't go after me for using a non production enviroment via flask, I don't really care.
