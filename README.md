@@ -26,11 +26,9 @@ services:
     container_name: flask-app
     working_dir: /app
     volumes:
-      - /containerdata/flask-app/:/app
+      - /PATH/TO/YOUR/APP:/app
     ports:
-      - "5020:5020"
-      - "5021:5021"
-      - "5022:5022"
+      - "5000:5000"
     command: >
       bash -c "pip install -r requirements.txt &&
                python main.py"
@@ -47,15 +45,15 @@ SONARR_URL=http://192.168.1.0:8989
 Build and start the app with Docker Compose:
 `docker-compose up --build`
 
-The Flask app will be accessible on the following ports:
+The Flask app will be accessible on the following sub domains:
 ```
-5020: Radarr movie count
-5021: Sonarr episode count
-5022: Radarr poster display
+"/radarr_count": Radarr movie count
+"/sonarr_count": Sonarr episode count
+"/radarr_poster": Radarr poster display
 ```
 ## Configuration
 
 Since this is just a python script and some HTML, you can edit the HTML to your liking so that it works for whatever setup you have.
 
 ## Disclaimer: 
-This script was mainly written by ChatGPT and then edited by me because I couldn't be bothered to write it myself. Also don't go after me for using a non production enviroment via flask, I don't really care.
+This script was mainly written by ChatGPT and then edited by me because I couldn't be bothered to write it myself.
