@@ -26,7 +26,7 @@ services:
     container_name: flask-app
     working_dir: /app
     volumes:
-      - /PATH/TO/YOUR/PROJECT/:/app
+      - /containerdata/flask-app/:/app
     ports:
       - "5020:5020"
       - "5021:5021"
